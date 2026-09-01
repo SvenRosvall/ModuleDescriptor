@@ -93,9 +93,6 @@ do
     python $gen_dir/generate_CANMIO.py -p23 -v 4c | writeIfUpdated "$merg_dir"/CANMIO-A520-4c--P23.json
     python $gen_dir/generate_CANMIO.py -p23 -v 4d | writeIfUpdated "$merg_dir"/CANMIO-A520-4d--P23.json
 
-    #CANCDU_U
-    python $gen_dir/generate_CANMIO.py -t CDU -p23 -v 4d | writeIfUpdated "$merg_dir"/CANCDU_U-A558-4d--P23.json
-    
     # Extended CANMIO
     # Default processor PIC18F46K80
     python $gen_dir/generate_CANMIO.py -t XIO -v 3e | writeIfUpdated "$merg_dir"/CANXIO-A540-3e.json
@@ -107,6 +104,9 @@ do
     python $gen_dir/generate_CANMIO.py -t XIO -p22 -v 4b | writeIfUpdated "$merg_dir"/CANXIO-A540-4b--P21.json
     python $gen_dir/generate_CANMIO.py -t XIO -p22 -v 4c | writeIfUpdated "$merg_dir"/CANXIO-A540-4c--P21.json
     python $gen_dir/generate_CANMIO.py -t XIO -p22 -v 4d | writeIfUpdated "$merg_dir"/CANXIO-A540-4d--P21.json
+
+    #CANCDU_U
+    python $gen_dir/generate_CANMIO.py -t CDU -p23 -v 4d | writeIfUpdated "$merg_dir"/CANCDU_U-A558-4d--P23.json
     ;;
 
   CANPAN)
